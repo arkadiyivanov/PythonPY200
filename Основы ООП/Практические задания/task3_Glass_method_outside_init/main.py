@@ -4,7 +4,7 @@ from typing import Union
 class Glass:
     def __init__(self, capacity_volume: Union[int, float], occupied_volume: Union[int, float]):
         self.capacity_volume = None
-        self.init_capacity_volume(capacity_volume)#  TODO заменить на метод  # объем стакана
+        self.init_capacity_volume(capacity_volume)
 
         if not isinstance(occupied_volume, (int, float)):
             raise TypeError
@@ -14,7 +14,6 @@ class Glass:
 
 
     def init_capacity_volume(self, capacity_volume: Union[int, float]):
-         # TODO заменить на метод
         if not isinstance(capacity_volume, (int, float)):
             raise TypeError
         if not capacity_volume > 0:
