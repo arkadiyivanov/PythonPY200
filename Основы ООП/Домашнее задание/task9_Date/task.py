@@ -1,1 +1,3 @@
-# TODO class Date
+
+class Data:
+    def __init__(self, day, ):

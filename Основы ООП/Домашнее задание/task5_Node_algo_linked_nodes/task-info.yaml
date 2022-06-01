@@ -20,7 +20,7 @@ files:
     status: Failed
     encrypted_possible_answer: return str(self.value)
   - offset: 1339
-    length: 113
+    length: 190
     placeholder_text: '# TODO реализуйте алгоритм, который свяжет между собой узлы
       в списке'
     initial_state:

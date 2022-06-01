@@ -45,6 +45,10 @@ if __name__ == "__main__":
     print(list_nodes)
 
     for node in range(len(list_nodes)):
+        current_ = list_nodes[node]
+        next_list = list_nodes[node+1]
+
+
         # TODO реализуйте алгоритм, который свяжет между собой узлы в списке
 
     print(list_nodes)
