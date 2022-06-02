@@ -1,5 +1,5 @@
 class Data:
-    def __init__(self, day: int, manth: int, year: int) -> int:
+    def __init__(self, day: int, manth: int, year: int):
         if not isinstance(day, int):
             raise TypeError
         if day < 10:
@@ -24,7 +24,12 @@ class Data:
 
 
 if __name__ == '__main__':
-    data_1 = Data(5, 5, 1998)
+    print("Введите дату своего рождения")
+    d = int(input("Число"))
+    m = int(input("Месяц"))
+    y = int(input("Год"))
+
+    data_1 = Data(d, m, y)
     data_2 = Data(11, 12, 1981)
     data_3 = Data(2,1,1981)
 
