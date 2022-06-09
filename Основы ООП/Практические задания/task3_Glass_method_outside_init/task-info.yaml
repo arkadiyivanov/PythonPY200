@@ -6,6 +6,9 @@ files:
     200
     100
   learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
 - name: main.py
   visible: true
   placeholders:
@@ -27,8 +30,8 @@ files:
     encrypted_possible_answer: |-
       self.capacity_volume = None
               self.init_capacity_volume(capacity_volume)
-  - offset: 448
-    length: 364
+  - offset: 414
+    length: 398
     placeholder_text: '#  TODO создать метод, который будет инициализировать атрибут
       capacity_volume'
     initial_state:
@@ -101,11 +104,8 @@ files:
         print(...)  # TODO распечатать атрибут capacity_volume
         print(...)  # TODO распечатать атрибут occupied_volume
   learner_created: false
-- name: __init__.py
-  visible: false
-  learner_created: false
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 01 Jun 2022 16:16:19 UTC
+  time: Wed, 01 Jun 2022 13:03:55 UTC
 record: -1

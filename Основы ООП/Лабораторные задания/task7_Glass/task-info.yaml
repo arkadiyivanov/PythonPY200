@@ -12,7 +12,7 @@ files:
     length: 165
     placeholder_text: '# TODO  создать класс Glass'
     initial_state:
-      length: 27
+      length: 165
       offset: 27
     initialized_from_dependency: false
     selected: true
@@ -56,5 +56,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 01 Jun 2022 17:52:08 UTC
+  time: Thu, 02 Jun 2022 09:50:12 UTC
 record: -1

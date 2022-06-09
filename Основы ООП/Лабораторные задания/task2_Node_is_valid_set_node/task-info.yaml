@@ -17,8 +17,8 @@ files:
     placeholder_text: '# TODO установить значение следующего узла с помощью метода
       set_next'
     initial_state:
-      length: 68
-      offset: 399
+      length: 123
+      offset: 390
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -31,8 +31,8 @@ files:
       # TODO метод проверки корректности связываемого узла
               ...
     initial_state:
-      length: 64
-      offset: 601
+      length: 124
+      offset: 648
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -45,8 +45,8 @@ files:
       # TODO метод должен проверять корректность узла и устанавливать значение атрибуту next
               ...
     initial_state:
-      length: 98
-      offset: 739
+      length: 136
+      offset: 839
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -57,8 +57,8 @@ files:
     length: 97
     placeholder_text: '# TODO инициализируйте два узла с любыми значеними'
     initial_state:
-      length: 50
-      offset: 871
+      length: 97
+      offset: 1009
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -69,8 +69,8 @@ files:
     length: 71
     placeholder_text: '# TODO свяжите первый узел со вторым'
     initial_state:
-      length: 36
-      offset: 927
+      length: 71
+      offset: 1112
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -115,5 +115,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 01 Jun 2022 17:37:45 UTC
+  time: Thu, 02 Jun 2022 06:52:53 UTC
 record: -1
