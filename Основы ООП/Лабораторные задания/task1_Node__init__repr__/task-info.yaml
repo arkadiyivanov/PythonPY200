@@ -10,7 +10,7 @@ files:
   visible: true
   placeholders:
   - offset: 371
-    length: 102
+    length: 206
     placeholder_text: |-
       # TODO  инициализировать атрибуты экземпляра класса Node
               ...
@@ -19,33 +19,33 @@ files:
       offset: 371
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |-
       self.value = value
               self.next = next_
-  - offset: 479
-    length: 137
+  - offset: 583
+    length: 145
     placeholder_text: '# TODO реализовать метод __repr__ для отображения экземпляра'
     initial_state:
       length: 60
       offset: 445
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |-
       def __repr__(self) -> str:
               return f"Node({self.value}, {self.next})"
-  - offset: 663
-    length: 44
+  - offset: 775
+    length: 52
     placeholder_text: '...  # TODO инициализировать первый узел'
     initial_state:
       length: 40
       offset: 552
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: Node(1)
-  - offset: 727
+  - offset: 847
     length: 44
     placeholder_text: '...  # TODO инициализировать второй узел'
     initial_state:
@@ -53,9 +53,9 @@ files:
       offset: 612
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: Node(2)
-  - offset: 793
+  - offset: 913
     length: 87
     placeholder_text: '...  # TODO через атрибут экземпляра устанавливаем первому
       узлу следующий узел'
@@ -64,7 +64,7 @@ files:
       offset: 675
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: second_node
   text: |
     from typing import Any, Optional
@@ -97,14 +97,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: Incorrect
-  time: Wed, 01 Jun 2022 17:11:07 UTC
-  expected: |
-    Node(1, Node(2, None))
-    Node(2, None)
-  actual: |
-    Node (1, Node (2, None))
-    Node (2, None)
+  message: Congratulations!
+  time: Thu, 09 Jun 2022 05:05:34 UTC
 record: -1
