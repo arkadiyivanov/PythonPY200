@@ -9,7 +9,7 @@ files:
   visible: true
   placeholders:
   - offset: 27
-    length: 313
+    length: 165
     placeholder_text: '# TODO  создать класс Glass'
     initial_state:
       length: 27
@@ -56,5 +56,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Thu, 02 Jun 2022 09:50:12 UTC
+  time: Wed, 01 Jun 2022 17:52:08 UTC
 record: -1

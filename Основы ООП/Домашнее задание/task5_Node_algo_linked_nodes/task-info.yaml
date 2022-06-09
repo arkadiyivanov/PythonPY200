@@ -10,17 +10,17 @@ files:
   visible: true
   placeholders:
   - offset: 628
-    length: 77
+    length: 72
     placeholder_text: '...  # TODO метод должен возвращать значение текущего узла'
     initial_state:
       length: 58
       offset: 628
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Failed
     encrypted_possible_answer: return str(self.value)
-  - offset: 1344
-    length: 232
+  - offset: 1339
+    length: 190
     placeholder_text: '# TODO реализуйте алгоритм, который свяжет между собой узлы
       в списке'
     initial_state:
@@ -28,7 +28,7 @@ files:
       offset: 1325
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Failed
     encrypted_possible_answer: |-
       for i in range(len(list_nodes) - 1):
               current_node = list_nodes[i]
@@ -88,8 +88,12 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Solved
+status: Failed
 feedback:
-  message: Congratulations!
-  time: Thu, 02 Jun 2022 10:22:20 UTC
+  message: Incorrect
+  time: Wed, 01 Jun 2022 18:02:40 UTC
+  expected: |
+    [Node(0, None), Node(1, None), Node(2, None), Node(3, None), Node(4, None)]
+    [Node(0, Node(1)), Node(1, Node(2)), Node(2, Node(3)), Node(3, Node(4)), Node(4, None)]
+  actual: <no output>
 record: -1

@@ -3,8 +3,8 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 0
-    length: 187
+  - offset: 2
+    length: 137
     placeholder_text: '# TODO написать класс Glass согласно условию'
     initial_state:
       length: 44
@@ -53,5 +53,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Thu, 02 Jun 2022 10:05:38 UTC
+  time: Wed, 01 Jun 2022 17:58:23 UTC
 record: -1

@@ -33,7 +33,7 @@ files:
     status: Solved
     encrypted_possible_answer: '[Node(value) for value in range(10)]'
   - offset: 690
-    length: 82
+    length: 81
     placeholder_text: '# TODO распечатать значения узлов'
     initial_state:
       length: 33
@@ -73,5 +73,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Thu, 02 Jun 2022 06:20:56 UTC
+  time: Wed, 01 Jun 2022 17:10:43 UTC
 record: -1

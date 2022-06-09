@@ -12,8 +12,8 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 399
-    length: 113
+  - offset: 390
+    length: 123
     placeholder_text: '# TODO установить значение следующего узла с помощью метода
       set_next'
     initial_state:
@@ -25,8 +25,8 @@ files:
     encrypted_possible_answer: |-
       self.next = None
               self.set_next(next_)
-  - offset: 646
-    length: 126
+  - offset: 648
+    length: 124
     placeholder_text: |-
       # TODO метод проверки корректности связываемого узла
               ...
@@ -39,8 +39,8 @@ files:
     encrypted_possible_answer: |2-
        if not isinstance(node, (type(None), Node)):
                   raise TypeError
-  - offset: 846
-    length: 134
+  - offset: 839
+    length: 136
     placeholder_text: |-
       # TODO метод должен проверять корректность узла и устанавливать значение атрибуту next
               ...
@@ -53,8 +53,8 @@ files:
     encrypted_possible_answer: |-
       self.is_valid(next_)
               self.next = next_
-  - offset: 1014
-    length: 96
+  - offset: 1009
+    length: 97
     placeholder_text: '# TODO инициализируйте два узла с любыми значеними'
     initial_state:
       length: 50
@@ -65,8 +65,8 @@ files:
     encrypted_possible_answer: |-
       first_node = Node(1)
           second_node = Node(2)
-  - offset: 1116
-    length: 68
+  - offset: 1112
+    length: 71
     placeholder_text: '# TODO свяжите первый узел со вторым'
     initial_state:
       length: 36
@@ -115,5 +115,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Thu, 02 Jun 2022 06:52:53 UTC
+  time: Wed, 01 Jun 2022 17:37:45 UTC
 record: -1

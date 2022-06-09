@@ -1,5 +1,8 @@
 type: theory
 files:
+- name: __init__.py
+  visible: false
+  learner_created: false
 - name: main.py
   visible: true
   placeholders:
@@ -24,7 +27,7 @@ files:
     status: Solved
     encrypted_possible_answer: glass2.capacity_volume, glass2.occupied_volume)
   - offset: 896
-    length: 66
+    length: 67
     placeholder_text: '#  TODO доливаем воды в первый стакан'
     initial_state:
       length: 37
@@ -33,8 +36,8 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: glass1.occupied_volume += 100
-  - offset: 1084
-    length: 55
+  - offset: 1085
+    length: 56
     placeholder_text: '#  TODO сравнить id объектов'
     initial_state:
       length: 28
@@ -76,11 +79,8 @@ files:
 
         #  TODO сравнить id объектов
   learner_created: false
-- name: __init__.py
-  visible: false
-  learner_created: false
 status: Solved
 feedback:
-  time: Wed, 01 Jun 2022 12:53:35 UTC
+  time: Wed, 01 Jun 2022 16:09:04 UTC
 record: -1
 post_submission_on_open: true

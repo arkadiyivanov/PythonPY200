@@ -9,8 +9,8 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 1056
-    length: 0
+  - offset: 1025
+    length: 58
     placeholder_text: '...  # TODO реализовать функцию'
     initial_state:
       length: 31
@@ -19,7 +19,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: left_node.set_next(right_node)
-  - offset: 1142
+  - offset: 1169
     length: 105
     placeholder_text: '...  # TODO связать между собой два узла с помощью функции
       linked_nodes'
@@ -85,5 +85,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Thu, 02 Jun 2022 07:06:15 UTC
+  time: Wed, 01 Jun 2022 17:49:22 UTC
 record: -1
