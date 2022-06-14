@@ -8,8 +8,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 429
-    length: 77
+  - offset: 507
+    length: 74
     placeholder_text: '...  # TODO обернуть все значения в класс Node и поместить
       их в python список'
     initial_state:
@@ -17,23 +17,23 @@ files:
       offset: 429
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: '[Node(value) for value in data]'
-  - offset: 516
+  - offset: 591
     length: 46
     placeholder_text: '# TODO составьте алгоритм, который свяжет узлы'
     initial_state:
       length: 46
       offset: 516
     initialized_from_dependency: false
-    selected: false
-    status: Failed
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       for i in range(len(self.list_nodes) - 1):
                   current_node = self.list_nodes[i]
                   next_node = self.list_nodes[i + 1]
                   self.linked_nodes(current_node, next_node)
-  - offset: 568
+  - offset: 643
     length: 36
     placeholder_text: '# TODO каким должен быть этот метод?'
     initial_state:
@@ -41,7 +41,7 @@ files:
       offset: 568
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: '@staticmethod'
   text: |
     from typing import Iterable, Optional
@@ -118,12 +118,8 @@ files:
             self.is_valid(next_)
             self.next = next_
   learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: Incorrect
-  time: Thu, 09 Jun 2022 12:03:59 UTC
-  expected: |
-    [Node(1, Node(2)), Node(2, Node(3)), Node(3, None)]
-  actual: |
-    [Node(1, None), Node(2, None), Node(3, None)]
+  message: Congratulations!
+  time: Tue, 14 Jun 2022 06:45:54 UTC
 record: -1

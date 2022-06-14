@@ -47,16 +47,16 @@ files:
   visible: true
   placeholders:
   - offset: 183
-    length: 48
+    length: 18
     placeholder_text: '...  # TODO добавить указатель на первый элемент'
     initial_state:
       length: 48
       offset: 183
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: 'self.head: Optional[Node] = None'
-  - offset: 532
+  - offset: 502
     length: 56
     placeholder_text: '...  # TODO инициализировать указатель на первый элемент'
     initial_state:
@@ -64,9 +64,9 @@ files:
       offset: 532
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: self.head = self.list_nodes[0]
-  - offset: 1346
+  - offset: 1316
     length: 41
     placeholder_text: '# TODO проверка правильности типа индекса'
     initial_state:
@@ -74,11 +74,11 @@ files:
       offset: 1346
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       if not isinstance(index, int):
                   raise TypeError
-  - offset: 1412
+  - offset: 1382
     length: 41
     placeholder_text: '...  # TODO чему равен начальный элемент?'
     initial_state:
@@ -86,9 +86,9 @@ files:
       offset: 1412
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: self.head
-  - offset: 1462
+  - offset: 1432
     length: 57
     placeholder_text: '...  # TODO с помощью цикла for добраться до нужного узла'
     initial_state:
@@ -96,11 +96,11 @@ files:
       offset: 1462
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       for _ in range(index):
                   current_node = current_node.next
-  - offset: 1674
+  - offset: 1644
     length: 49
     placeholder_text: '...  # TODO метод должен возвращать значение узла'
     initial_state:
@@ -108,7 +108,7 @@ files:
       offset: 1674
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       node = self.step_by_step_on_nodes(index)
               return node.value
@@ -171,5 +171,8 @@ files:
 
         print(linked_list[1])
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 14 Jun 2022 06:46:39 UTC
 record: -1

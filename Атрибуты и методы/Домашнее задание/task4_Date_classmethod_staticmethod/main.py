@@ -13,10 +13,13 @@ class Date:
         self.year = year
 
         self.is_valid_date(self.day, self.month, self.year)
-
-    def is_leap_year(self, year: int):
+    @staticmethod
+    def is_leap_year(year: int):
         """Проверяет, является ли год високосным"""
-        ...  # TODO
+        if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
+            return year
+
+
 
     def get_max_day(self, month: int, year: int):
         """Возвращает максимальное количество дней в месяце для указанного года"""
@@ -24,9 +27,14 @@ class Date:
 
     def is_valid_date(self, day: int, month: int, year: int):
         """Проверяет, является ли дата корректной"""
-        ...  # TODO
+        if not isinstance(day, int):
+            raise TypeError
+        if not isinstance(month, int):
+            raise TypeError
+        if not isinstance(year, int):
+            raise TypeError
 
 
 if __name__ == "__main__":
-    # Write your solution here
-    pass
+    data1 = Date(1,5,1981)
+    print(data1)
