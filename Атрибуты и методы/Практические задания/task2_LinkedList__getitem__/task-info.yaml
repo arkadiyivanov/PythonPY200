@@ -47,7 +47,7 @@ files:
   visible: true
   placeholders:
   - offset: 183
-    length: 18
+    length: 0
     placeholder_text: '...  # TODO добавить указатель на первый элемент'
     initial_state:
       length: 48
@@ -56,7 +56,7 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: 'self.head: Optional[Node] = None'
-  - offset: 502
+  - offset: 473
     length: 56
     placeholder_text: '...  # TODO инициализировать указатель на первый элемент'
     initial_state:
@@ -66,7 +66,7 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: self.head = self.list_nodes[0]
-  - offset: 1316
+  - offset: 1287
     length: 41
     placeholder_text: '# TODO проверка правильности типа индекса'
     initial_state:
@@ -78,7 +78,7 @@ files:
     encrypted_possible_answer: |-
       if not isinstance(index, int):
                   raise TypeError
-  - offset: 1382
+  - offset: 1353
     length: 41
     placeholder_text: '...  # TODO чему равен начальный элемент?'
     initial_state:
@@ -88,7 +88,7 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: self.head
-  - offset: 1432
+  - offset: 1403
     length: 57
     placeholder_text: '...  # TODO с помощью цикла for добраться до нужного узла'
     initial_state:
@@ -100,7 +100,7 @@ files:
     encrypted_possible_answer: |-
       for _ in range(index):
                   current_node = current_node.next
-  - offset: 1644
+  - offset: 1615
     length: 49
     placeholder_text: '...  # TODO метод должен возвращать значение узла'
     initial_state:
@@ -174,5 +174,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Tue, 14 Jun 2022 06:46:39 UTC
+  time: Thu, 16 Jun 2022 10:02:40 UTC
 record: -1

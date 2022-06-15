@@ -10,7 +10,7 @@ files:
   visible: true
   placeholders:
   - offset: 144
-    length: 130
+    length: 187
     placeholder_text: |-
       self.capacity_volume = capacity_volume  # объем стакана
               self.occupied_volume = occupied_volume  # объем жидкости в стакане
@@ -44,5 +44,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Thu, 09 Jun 2022 12:00:25 UTC
+  time: Wed, 08 Jun 2022 15:08:13 UTC
 record: -1

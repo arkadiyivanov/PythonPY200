@@ -9,7 +9,7 @@ files:
   visible: true
   placeholders:
   - offset: 1817
-    length: 39
+    length: 79
     placeholder_text: 'str(self.list_nodes)  # TODO заменить на list comprehension'
     initial_state:
       length: 59
@@ -124,5 +124,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Tue, 14 Jun 2022 06:47:27 UTC
+  time: Wed, 08 Jun 2022 16:50:41 UTC
 record: -1
