@@ -18,24 +18,20 @@ class Date:
         """Проверяет, является ли год високосным"""
 
         if (self.year % 4 == 0) and (self.year % 100 != 0) or (self.year % 400 == 0):
-            return self.year
+            return True
         else:
-            return "Год не высокосный"
+            return False
 
 
 
 
     def get_max_day(self, month: int, year: int):
         """Возвращает максимальное количество дней в месяце для указанного года"""
+        if self.is_leap_year(year=True):
+            self.month = Date.DAY_OF_MONTH[0]
+        else:
+            self.month = Date.DAY_OF_MONTH[1]
 
-        if self.month == 1 or self.month == 3 or self.month == 5 or self.month == 7 or self.month == 9 or self.month == 11:
-            return "31"
-        elif self.month == 4 or self.month == 6 or self.month == 8 or self.month == 10:
-            return "30"
-        elif self.month == '2':
-            if self.year == "Высокосный год":
-                return '29'
-            return "28"
         
 
     def is_valid_date(self, day: int, month: int, year: int):
@@ -53,7 +49,7 @@ class Date:
 
 data1 = Date(1,5,1981)
 data1.get_max_day(5,1982)
-print(data1)
+
 
 
 

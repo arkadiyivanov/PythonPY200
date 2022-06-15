@@ -16,7 +16,7 @@ files:
   visible: true
   placeholders:
   - offset: 183
-    length: 0
+    length: 103
     placeholder_text: '# TODO атрибут, хранящий длину последовательности'
     initial_state:
       length: 49
@@ -25,7 +25,7 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: self.len = 0
-  - offset: 559
+  - offset: 667
     length: 45
     placeholder_text: '# TODO устанавливаем длину последовательности'
     initial_state:
@@ -35,7 +35,7 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: self.len = len(self.list_nodes)
-  - offset: 1433
+  - offset: 1541
     length: 43
     placeholder_text: '# TODO проверка корректности границ индекса'
     initial_state:
@@ -47,7 +47,7 @@ files:
     encrypted_possible_answer: |-
       if not 0 <= index < self.len:  # для for
                   raise IndexError()
-  - offset: 1969
+  - offset: 2077
     length: 77
     placeholder_text: '# TODO с помощью цикла for распечатать в столбик все значения
       связного списка'
@@ -168,5 +168,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Tue, 14 Jun 2022 06:47:04 UTC
+  time: Wed, 08 Jun 2022 16:46:58 UTC
 record: -1
