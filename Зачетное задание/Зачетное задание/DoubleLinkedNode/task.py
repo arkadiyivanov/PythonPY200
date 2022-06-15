@@ -15,6 +15,8 @@ class DoubleLinkedNode(Node):
 
 
 if __name__ == "__main__":
+
+
     ...
 
 def test__node__str__():
