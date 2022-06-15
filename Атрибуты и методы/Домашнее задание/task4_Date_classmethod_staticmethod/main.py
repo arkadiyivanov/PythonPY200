@@ -29,9 +29,9 @@ class Date:
         """Возвращает максимальное количество дней в месяце для указанного года"""
 
         if self.month == 1 or self.month == 3 or self.month == 5 or self.month == 7 or self.month == 9 or self.month == 11:
-            return self.month
+            return "31"
         elif self.month == 4 or self.month == 6 or self.month == 8 or self.month == 10:
-            return self.month
+            return "30"
         elif self.month == '2':
             if self.year == "Высокосный год":
                 return '29'
@@ -51,8 +51,8 @@ class Date:
         return f"{self.day}/{self.month}/{self.year}"
 
 
-data1= Date(1,5,1981)
-data1.get_max_day
+data1 = Date(1,5,1981)
+data1.get_max_day(5,1982)
 print(data1)
 
 

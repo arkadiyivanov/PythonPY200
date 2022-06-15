@@ -14,7 +14,7 @@ files:
     status: Solved
     encrypted_possible_answer: '...'
   - offset: 852
-    length: 412
+    length: 400
     placeholder_text: '...  # TODO'
     initial_state:
       length: 11
@@ -23,7 +23,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: '...'
-  - offset: 1389
+  - offset: 1377
     length: 267
     placeholder_text: '...  # TODO'
     initial_state:
