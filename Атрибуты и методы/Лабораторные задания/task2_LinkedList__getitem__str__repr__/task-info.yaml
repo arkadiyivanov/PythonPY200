@@ -16,10 +16,10 @@ files:
       length: 36
       offset: 1391
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: IndexError()
-  - offset: 1558
+  - offset: 1543
     length: 6
     placeholder_text: '# TODO'
     initial_state:
@@ -31,7 +31,7 @@ files:
     encrypted_possible_answer: |-
       node = self.step_by_step_on_nodes(index)
               return node.value
-  - offset: 1605
+  - offset: 1590
     length: 63
     placeholder_text: '...  # TODO Метод to_list реализовать через list comprehension.'
     initial_state:
@@ -42,7 +42,7 @@ files:
     status: Solved
     encrypted_possible_answer: return [linked_list_value for linked_list_value in
       self]
-  - offset: 1709
+  - offset: 1694
     length: 61
     placeholder_text: '...  # TODO c помощью метода to_list реализовать данный метод'
     initial_state:
@@ -52,7 +52,7 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: return f"{self.__class__.__name__}({self.to_list()})"
-  - offset: 1810
+  - offset: 1795
     length: 61
     placeholder_text: '...  # TODO c помощью метода to_list реализовать данный метод'
     initial_state:
@@ -181,5 +181,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 08 Jun 2022 17:43:29 UTC
+  time: Thu, 16 Jun 2022 10:40:38 UTC
 record: -1

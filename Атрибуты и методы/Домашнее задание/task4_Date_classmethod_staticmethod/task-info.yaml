@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 1073
-    length: 11
+  - offset: 544
+    length: 141
     placeholder_text: '...  # TODO'
     initial_state:
       length: 11
@@ -13,8 +13,8 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: '...'
-  - offset: 1211
-    length: 7
+  - offset: 805
+    length: 150
     placeholder_text: '...  # TODO'
     initial_state:
       length: 11
@@ -23,8 +23,8 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: '...'
-  - offset: 1331
-    length: 11
+  - offset: 1073
+    length: 0
     placeholder_text: '...  # TODO'
     initial_state:
       length: 11
@@ -74,5 +74,7 @@ files:
   visible: true
   learner_created: true
 status: Solved
+feedback:
+  time: Thu, 16 Jun 2022 12:08:29 UTC
 record: -1
 post_submission_on_open: true
