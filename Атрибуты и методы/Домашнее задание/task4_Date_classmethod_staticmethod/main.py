@@ -19,7 +19,7 @@ class Date:
         if self.year % 4 == 0 or self.year % 100 == 0 and self.year % 400 != 0:
             return True
         else:
-            return False # TODO
+            return False  # TODO
 
     def get_max_day(self):
         """Возвращает максимальное количество дней в месяце для указанного года"""
@@ -38,3 +38,4 @@ class Date:
 if __name__ == "__main__":
 
     data1 = Date(1, 5, 1981)
+    print(data1)

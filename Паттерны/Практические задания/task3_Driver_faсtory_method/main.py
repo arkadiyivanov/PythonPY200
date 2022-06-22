@@ -3,7 +3,13 @@ from abc import ABC, abstractmethod
 from drivers import IStructureDriver, SimpleFileDriver
 
 
-# TODO Реализовать абстрактный класс
+class DriverFactoryMethod(ABC):
+    @classmethod
+    @abstractmethod
+    def get_driver(cls) -> IStructureDriver:
+        ...
+
+
 
 
 class SimpleFileFactoryMethod(DriverFactoryMethod):
@@ -20,5 +26,5 @@ class SimpleFileFactoryMethod(DriverFactoryMethod):
 
 
 if __name__ == '__main__':
-    driver = ...  # TODO с помощью фабричного метода инциализировать драйвер
+    driver = SimpleFileFactoryMethod.get_driver()  # TODO с помощью фабричного метода инциализировать драйвер
     print(driver)

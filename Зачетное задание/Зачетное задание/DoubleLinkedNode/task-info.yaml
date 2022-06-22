@@ -48,5 +48,11 @@ files:
             # todo test set next
             ...
   learner_created: false
-status: Unchecked
+- name: test.py
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 22 Jun 2022 17:17:46 UTC
 record: -1
