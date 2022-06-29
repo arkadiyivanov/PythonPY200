@@ -1,8 +1,8 @@
 from typing import Any, Optional
 
 
-class Node(object):
-    def __init__(self, value: Any, next_: Optional["Node"] = None):
+class Node():
+    def __init__(self, value: Any, next_ = None):
         self.value = value
         self.next = next_
 

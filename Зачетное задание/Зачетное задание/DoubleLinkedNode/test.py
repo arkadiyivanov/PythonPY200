@@ -9,9 +9,9 @@ class LinkedList:
         self.head: Optional[Node] = None
         self.tail = self.head
 
-        # if node is not None:
-        #     for value in node:
-        #         self.append(value)
+        if node is not None:
+            for value in node:
+                self.append(value)
 
     def append(self, value: Any):
         append_node = Node(value)
