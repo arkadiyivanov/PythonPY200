@@ -1,8 +1,10 @@
 def test__node__str__():
     node = Node()
     expected = 5
-    actual =str(node)
+    actual = str(node)
     assert expected == actual
+
+
 class LinkedList:
     def __init__(self, node: Iterable = None):
         self.len = 0
@@ -40,7 +42,7 @@ class LinkedList:
     @staticmethod
     def linked_nodes(left_node: Node, right_node: Optional[Node] = None) -> None:
 
-            left_node.next = right_node
+        left_node.next = right_node
 
     def __getitem__(self, index: int) -> Any:
         node = self.step_by_step_on_nodes(index)

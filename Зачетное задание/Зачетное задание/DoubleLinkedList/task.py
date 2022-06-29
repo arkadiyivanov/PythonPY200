@@ -1,21 +1,21 @@
 import sys
 from typing import Iterator, Any, Iterable, Optional
 
-from node import Node
+from node import DoubleLinkedNode, Node
 
 
 class LinkedList:
-    def __init__(self, node: Iterable = None):
+    def __init__(self, data: Iterable = None):
         self.len = 0
         self.head: Optional[Node] = None
         self.tail = self.head
 
-        if node is not None:
-            for value in node:
-                self.append(value)
+        if data is not None:
+            for element in data:
+                self.append(element)
 
-    def append(self, value: Any):
-        append_node = Node(value)
+    def append(self, element: Any):
+        append_node = Node(element)
 
         if self.head is None:
             self.head = self.tail = append_node
@@ -25,7 +25,7 @@ class LinkedList:
 
         self.len += 1
 
-    def step_by_step_on_nodes(self, index: int) -> Node:
+    def insert(self, index: int):
         if not isinstance(index, int):
             raise TypeError()
 
@@ -41,15 +41,16 @@ class LinkedList:
     @staticmethod
     def linked_nodes(left_node: Node, right_node: Optional[Node] = None) -> None:
 
-            left_node.next = right_node
+        left_node.next = right_node
 
     def __getitem__(self, index: int) -> Any:
-        node = self.step_by_step_on_nodes(index)
-        return node.value
+        node = self.insert(index)
+        return node
 
     def __setitem__(self, index: int, value: Any) -> None:
-        node = self.step_by_step_on_nodes(index)
+        node = self.insert(index)
         node.value = value
+        return node.value
 
     def __delitem__(self, index: int):
         if not isinstance(index, int):
@@ -61,10 +62,10 @@ class LinkedList:
         if index == 0:
             self.head = self.head.next
         elif index == self.len - 1:
-            tail = self.step_by_step_on_nodes(index - 1)
+            tail = self.insert(index - 1)
             tail.next = None
         else:
-            prev_node = self.step_by_step_on_nodes(index - 1)
+            prev_node = self.insert(index - 1)
             del_node = prev_node.next
             next_node = del_node.next
 
@@ -72,7 +73,7 @@ class LinkedList:
 
         self.len -= 1
 
-    def to_list(self) -> list:
+    def to_list(self):
         return [linked_list_value for linked_list_value in self]
 
     def __repr__(self) -> str:
@@ -87,55 +88,59 @@ class LinkedList:
             yield current_node
             current_node = current_node.next
 
+
 class DoubleLinkedList(LinkedList):
-    class Node:
-        prev = None
-        next_ = None
-        value = None
 
-        def __init__(self, value=None, next_=None, prev=None):
-            self.value = value
-            self.next_ = next_
-            self.prev = prev
+    @staticmethod
+    def linked_nodes(left_node: DoubleLinkedNode, right_node: Optional[DoubleLinkedNode] = None) -> None:
+        left_node.next = right_node
+        right_node.prev = left_node
 
-    head = None
-    tail = None
-    len_ = None
-
-    def add(self, value):
-        self.len += 1
-        if not self.head:
-            self.head = self.Node(value)
-            return value
-        elif not self.tail:
-            self.tail = self.Node(value, None, self.head)
-            self.head.next_ = self.tail
-            return value
+    def insert_in_emptylist(self, data):
+        if self.head is None:
+            new_node = Node(data)
+            self.head = new_node
         else:
-            self.tail = self.Node(value, None, self.tail)
-            self.tail.prev.next_ = self.tail
-            return value
+            print("Список не пустой")
 
-    def __iter__(self):
-        node = self.head
-        while node:
-            yield node.value
-            node = node.next_
+        self.len += 1
+
+    def insert_at_start(self, data):
+        if self.head is None:
+            new_node = Node(data)
+            self.head = new_node
+            print("узел вставлен")
+            return
+        new_node = Node(data)
+        new_node.tail = self.head
+        self.head.prev = new_node
+        self.head= new_node
+
+    def __delitem__(self, index: int):
+        super().__delitem__(index)
+
+        self.len -= 1
+
 
 
 if __name__ == '__main__':
-    dl = DoubleLinkedList()
-    dl.add(5)
-    dl.add(2)
-    dl.add(1)
-    dl.add(4)
-    dl.add(10)
+
+    # ll = LinkedList([1, 2, 3])
+    #
+    # print(sys.getrefcount(ll.head))
+    #
+    # for node in ll.nodes_iterator():
+    #     print(sys.getrefcount(node))
+
+
+    dl = DoubleLinkedList([])
+    dl.insert_in_emptylist(2)
+    print(dl)
+    dl.insert_at_start(8)
+    print(dl)
+
+    # dl.__delitem__(0)
+
+
     for value in dl:
         print(value)
-
-    ll = LinkedList([1, 2, 3, 4, 5])
-
-    print(sys.getrefcount(ll.head))
-
-    for node in ll.nodes_iterator():
-        print(sys.getrefcount(node))

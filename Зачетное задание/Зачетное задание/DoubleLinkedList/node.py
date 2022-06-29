@@ -2,7 +2,9 @@ from typing import Any, Optional
 
 
 class Node():
+
     def __init__(self, value: Any, next_ = None):
+
         self.value = value
         self.next = next_
 
@@ -41,13 +43,13 @@ class DoubleLinkedNode(Node):
 
     @property
     def prev(self):
-        return self.__prev
+        return self._prev
 
     @prev.setter
     def prev(self, value):
         print("Вызван setter")
         self.is_valid(value)
-        self.__prev = value
+        self._prev = value
 
 
 if __name__ == "__main__":

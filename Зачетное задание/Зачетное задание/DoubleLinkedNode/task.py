@@ -1,4 +1,5 @@
 from typing import Any, Optional
+
 class Node:
 
     def __init__(self, value: Any, next_: Optional["Node"] = None):
@@ -33,9 +34,10 @@ class DoubleLinkedNode(Node):
         super().__init__(value)
         self.prev = prev
 
-
-    def __repr__(self) -> str:
-        return f"Node({self.value}, {None})" if self.next is None else f"Node({self.value}, Node({self.next}))"
+    def __repr__(self) :
+        next_prev = None if self.prev is None else f"DoubleLinkedNode({self.prev})"
+        next_repr = None if self.next is None else f"DoubleLinkedNode({self.next})"
+        return f"DoubleLinkedNode({self.value}, {next_prev}, {next_repr})"
 
     def __str__(self) -> str:
         return str(self.value)
@@ -54,10 +56,10 @@ class DoubleLinkedNode(Node):
 
 
 if __name__ == "__main__":
-    first_node = Node(1)
-    second_node = Node(2)
+    f_node = Node(1)
+    s_node = Node(2)
 
 
-    first_node.next = second_node
+    f_node.next = s_node
 
-    print(repr(first_node), repr(first_node.next))
+    print(repr(f_node), repr(f_node.next))
