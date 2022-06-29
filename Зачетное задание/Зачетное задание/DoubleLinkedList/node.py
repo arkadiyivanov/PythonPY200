@@ -1,9 +1,7 @@
 from typing import Any, Optional
 
 
-class Node:
-    """ Класс, который описывает узел связного списка. """
-
+class Node(object):
     def __init__(self, value: Any, next_: Optional["Node"] = None):
         self.value = value
         self.next = next_
