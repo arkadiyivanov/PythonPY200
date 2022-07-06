@@ -9,6 +9,14 @@ class Dbllist:
             self.next_node = next_node
             self.previous_node = previous_node
 
+
+        def __repr__(self):
+            next_prev = None if self.previous_node is None else f"DoubleLinkedNode({self.prev})"
+            next_repr = None if self.next is None else f"DoubleLinkedNode({self.next})"
+            return f"DoubleLinkedNode({self.value}, {next_prev}, {next_repr})"
+
+        def __str__(self) -> str:
+            return str(self.value)
     head = None
     tail = None
     length = 0

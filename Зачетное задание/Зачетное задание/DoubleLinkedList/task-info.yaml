@@ -42,6 +42,9 @@ files:
 - name: myll.py
   visible: true
   learner_created: true
+- name: test_task.py
+  visible: true
+  learner_created: true
 status: Solved
 feedback:
   message: Congratulations!

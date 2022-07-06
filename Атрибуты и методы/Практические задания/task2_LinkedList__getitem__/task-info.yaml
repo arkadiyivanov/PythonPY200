@@ -47,65 +47,65 @@ files:
   visible: true
   placeholders:
   - offset: 183
-    length: 0
+    length: 30
     placeholder_text: '...  # TODO добавить указатель на первый элемент'
     initial_state:
-      length: 48
+      length: 30
       offset: 183
     initialized_from_dependency: false
     selected: false
     status: Solved
     encrypted_possible_answer: 'self.head: Optional[Node] = None'
-  - offset: 473
+  - offset: 443
     length: 56
     placeholder_text: '...  # TODO инициализировать указатель на первый элемент'
     initial_state:
       length: 56
-      offset: 532
+      offset: 443
     initialized_from_dependency: false
     selected: false
     status: Solved
     encrypted_possible_answer: self.head = self.list_nodes[0]
-  - offset: 1287
+  - offset: 1257
     length: 41
     placeholder_text: '# TODO проверка правильности типа индекса'
     initial_state:
       length: 41
-      offset: 1346
+      offset: 1257
     initialized_from_dependency: false
     selected: false
     status: Solved
     encrypted_possible_answer: |-
       if not isinstance(index, int):
                   raise TypeError
-  - offset: 1353
+  - offset: 1323
     length: 41
     placeholder_text: '...  # TODO чему равен начальный элемент?'
     initial_state:
       length: 41
-      offset: 1412
+      offset: 1323
     initialized_from_dependency: false
     selected: false
     status: Solved
     encrypted_possible_answer: self.head
-  - offset: 1403
+  - offset: 1373
     length: 57
     placeholder_text: '...  # TODO с помощью цикла for добраться до нужного узла'
     initial_state:
       length: 57
-      offset: 1462
+      offset: 1373
     initialized_from_dependency: false
     selected: false
     status: Solved
     encrypted_possible_answer: |-
       for _ in range(index):
                   current_node = current_node.next
-  - offset: 1615
+  - offset: 1585
     length: 49
     placeholder_text: '...  # TODO метод должен возвращать значение узла'
     initial_state:
       length: 49
-      offset: 1674
+      offset: 1585
     initialized_from_dependency: false
     selected: false
     status: Solved

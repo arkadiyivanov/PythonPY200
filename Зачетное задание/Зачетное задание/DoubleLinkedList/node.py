@@ -1,20 +1,21 @@
-from typing import Any, Optional
+from typing import Any
 
 
 class Node:
 
-    def __init__(self, value: Any, next_ = None):
+    def __init__(self, value: Any, next_=None):
 
         self.value = value
         self.next = next_
 
-    def __repr__(self) -> str:
+    def __repr__(self):
         return f"Node({self.value}, {None})" if self.next is None else f"Node({self.value}, Node({self.next}))"
 
     def __str__(self) -> str:
         return str(self.value)
 
-    def is_valid(self, node: Any) -> None:
+    @staticmethod
+    def is_valid(node: Any) -> None:
         if not isinstance(node, (type(None), Node)):
             raise TypeError
 
@@ -24,7 +25,6 @@ class Node:
 
     @next.setter
     def next(self, value):
-        print("Вызван setter")
         self.is_valid(value)
         self.__next = value
 
@@ -39,18 +39,19 @@ class DoubleLinkedNode(Node):
         next_prev = None if self.prev is None else f"DoubleLinkedNode({self.prev})"
         next_repr = None if self.next is None else f"DoubleLinkedNode({self.next})"
         return f"DoubleLinkedNode({self.value}, {next_prev}, {next_repr})"
+
     def __str__(self) -> str:
         return str(self.value)
 
     @property
     def prev(self):
-        return self._prev
+        return self.__prev
 
     @prev.setter
     def prev(self, value):
         print("Вызван setter")
         self.is_valid(value)
-        self._prev = value
+        self.__prev = value
 
 
 if __name__ == "__main__":
