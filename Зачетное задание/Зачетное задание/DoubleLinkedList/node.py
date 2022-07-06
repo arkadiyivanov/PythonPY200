@@ -35,9 +35,10 @@ class DoubleLinkedNode(Node):
         super().__init__(value)
         self.prev = prev
 
-    def __repr__(self) -> str:
-        return f"Node({self.value}, {None})" if self.next is None else f"Node({self.value}, Node({self.next}))"
-
+    def __repr__(self):
+        next_prev = None if self.prev is None else f"DoubleLinkedNode({self.prev})"
+        next_repr = None if self.next is None else f"DoubleLinkedNode({self.next})"
+        return f"DoubleLinkedNode({self.value}, {next_prev}, {next_repr})"
     def __str__(self) -> str:
         return str(self.value)
 
