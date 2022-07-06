@@ -1,7 +1,7 @@
 from typing import Any, Optional
 
 
-class Node():
+class Node:
 
     def __init__(self, value: Any, next_ = None):
 
@@ -60,3 +60,7 @@ if __name__ == "__main__":
     first_node.next = second_node
 
     print(repr(first_node), repr(first_node.next))
+    a = Node(4)
+    b = Node(6)
+    a.next = b
+    print(repr(a), repr(b))

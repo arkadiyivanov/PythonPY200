@@ -125,13 +125,13 @@ class DoubleLinkedList(LinkedList):
 
 if __name__ == '__main__':
 
-    # ll = LinkedList([1, 2, 3])
-    #
-    # print(sys.getrefcount(ll.head))
-    #
-    # for node in ll.nodes_iterator():
-    #     print(sys.getrefcount(node))
+    ll = LinkedList([1, 2, 3])
 
+    print(sys.getrefcount(ll.head))
+
+    for node in ll.nodes_iterator():
+        print(sys.getrefcount(node))
+    ll.append(4)
 
     dl = DoubleLinkedList([])
     dl.insert_in_emptylist(2)

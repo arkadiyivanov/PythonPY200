@@ -36,10 +36,10 @@ files:
     if __name__ == "__main__":
         ...
   learner_created: false
-- name: myLL.py
+- name: my dll.py
   visible: true
   learner_created: true
-- name: my dll.py
+- name: myll.py
   visible: true
   learner_created: true
 status: Solved
